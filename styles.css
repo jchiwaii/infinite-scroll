@@ -1,16 +1,81 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Instrument Serif", sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #f4f4f4;
 }
 
-h1 {
+.head h1 {
   font-size: 2.4rem;
   margin: 1.2rem 0;
   text-align: center;
+  color: black;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-container {
+  margin: 2rem 30%;
+}
+
+.img-container img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.img-container img:hover {
+  transform: scale(1.005);
+  transition: all 0.3s ease;
+}
+
+.img-container img:active {
+  transform: scale(0.95);
+  transition: all 0.3s ease;
+}
+
+.img-container img:focus {
+  outline: none;
+}
+
+.img-container img:focus-visible {
+  outline: 2px solid #000;
+}
+
+@media (max-width: 768px) {
+  .img-container {
+    margin: 2rem 5%;
+  }
+
+  .head h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .img-container img {
+    width: 100%;
+    margin-top: 1rem;
+  }
 }
