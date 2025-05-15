@@ -10,26 +10,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
     <title>Endless...</title>
   </head>
   <body>
-    <div class="head">
+    >
+    <div class="head" id="head">
       <h1>Scroll to the end of the page to see the magic!</h1>
     </div>
 
-    <div class="loader" hidden>
+    <div class="loader" id="loader" hidden>
       <img src="loader.svg" alt="loading, please wait..." />
     </div>
-    <div class="img-container">
-      <img
-        src="https://images.unsplash.com/photo-1741846562658-833add670241?q=80&w=3276&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="image"
-      />
-      <img
-        src="https://images.unsplash.com/photo-1741846562658-833add670241?q=80&w=3276&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="image"
-      />
-    </div>
+    <div class="img-container" id="img-container"></div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
